@@ -1,3 +1,5 @@
+![skyrim-mod-manager](.github/preview.png)
+
 # Skyrim Mod Manager
 
 A native Linux mod manager for **Skyrim Special Edition / Anniversary Edition under Proton**.
