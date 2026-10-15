@@ -1,0 +1,30 @@
+:root { --bg:#14111c; --panel:#1e1a29; --line:#2f2840; --fg:#e8e3f5; --dim:#8d84a5; --accent:#d4a24c; --win:#6fcf97; --lose:#ef6f6c; --warn:#f2c94c; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:14px/1.4 system-ui, sans-serif; }
+header { display:flex; gap:1rem; align-items:center; padding:.6rem 1rem; border-bottom:1px solid var(--line); flex-wrap:wrap; }
+h1 { font-size:1.1rem; margin:0; color:var(--accent); letter-spacing:.04em; }
+h2 { font-size:.95rem; margin:.2rem 0 .6rem; } h2 small { color:var(--dim); font-weight:normal; }
+.paths { display:flex; flex-direction:column; font-size:.75rem; color:var(--dim); flex:1; min-width:0; }
+.paths code { color:var(--fg); }
+.actions { display:flex; gap:.5rem; margin-top:.6rem; } header .actions { margin:0; }
+button { background:var(--panel); color:var(--fg); border:1px solid var(--line); border-radius:6px; padding:.35rem .7rem; cursor:pointer; }
+button:hover:not(:disabled) { border-color:var(--accent); } button:disabled { opacity:.4; cursor:default; }
+button.primary { background:var(--accent); color:#1a1408; border-color:var(--accent); font-weight:600; }
+main { display:grid; grid-template-columns: 340px 1fr; height: calc(100vh - 64px); }
+section { padding:.8rem 1rem; overflow:auto; } .mods { border-right:1px solid var(--line); }
+ol { list-style:none; padding:0; margin:0; }
+li { display:flex; align-items:center; gap:.4rem; padding:.3rem .2rem; border-bottom:1px solid var(--line); }
+li.off .name, tr.off { opacity:.45; }
+.name { flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.move button { padding:0 .35rem; font-size:.7rem; }
+.tag { font-size:.7rem; border-radius:4px; padding:0 .3rem; border:1px solid currentColor; }
+.win { color:var(--win); } .lose { color:var(--lose); } .warn { color:var(--warn); } .dim { color:var(--dim); }
+nav { display:flex; gap:.3rem; margin-bottom:.8rem; } nav button.active { border-color:var(--accent); color:var(--accent); }
+table { width:100%; border-collapse:collapse; font-size:.85rem; }
+th { text-align:left; color:var(--dim); font-weight:normal; border-bottom:1px solid var(--line); padding:.3rem; }
+td { padding:.3rem; border-bottom:1px solid var(--line); }
+ul.diff, ul.issues { font-family: ui-monospace, monospace; font-size:.82rem; padding-left:0; }
+ul.diff li, ul.issues li { border:none; padding:.1rem 0; display:block; }
+.add { color:var(--win); } .del { color:var(--lose); } .chg { color:var(--accent); }
+ul.issues li { color:var(--lose); } ul.issues b { color:var(--fg); }
+.err { background:#3a1717; color:var(--lose); padding:.4rem 1rem; } .msg { background:#17301f; color:var(--win); padding:.4rem 1rem; }

@@ -1,0 +1,7 @@
+target/
+node_modules/
+ui/dist/
+ui/.svelte-kit/
+*.log
+SCOPE.md
+src-tauri/gen/
