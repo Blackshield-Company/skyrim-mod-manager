@@ -6,7 +6,7 @@ members = ["crates/smm-core", "crates/smm-cli", "src-tauri"]
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-repository = "https://github.com/Blackshield-Company/skyrim-mod-manager"
+repository = "https://github.com/synthalorian/skyrim-mod-manager"
 
 [workspace.dependencies]
 serde = { version = "1", features = ["derive"] }
