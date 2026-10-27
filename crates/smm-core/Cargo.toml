@@ -10,7 +10,7 @@ serde.workspace = true
 serde_json.workspace = true
 thiserror.workspace = true
 esplugin = "6"
-compress-tools = "0.15"
+compress-tools = "0.16"
 keyvalues-parser = "0.2"
 walkdir = "2"
 
