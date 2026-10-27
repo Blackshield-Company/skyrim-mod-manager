@@ -20,11 +20,7 @@ updates:
           - "minor"
           - "patch"
   - package-ecosystem: "cargo"
-    directories:
-      - "/"
-      - "/crates/smm-cli"
-      - "/crates/smm-core"
-      - "/src-tauri"
+    directory: "/"
     schedule:
       interval: "weekly"
       day: "monday"
